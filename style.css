@@ -1,0 +1,41 @@
+/*Hoja de Estilos para WordCamp Venezuela 2021 */
+/* Quitar padding de main */
+.site-main {
+	padding: 0;
+}
+
+/* Ampliar ancho de contenedores */
+.entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {
+	max-width: 100%;
+	width: 100%;
+}
+.background-hero-vcv{
+	background-image: url('https://venezuela.wordcamp.org/2021/files/2021/02/fondo-provisional-wcv.jpg');
+	background-size: cover;
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	margin-bottom: 0;
+    padding-bottom: 150px;
+    padding-top: 50px;
+}
+.wp-block-button .wp-block-button__link{
+	border:none;
+	background-color: #920000;
+	color:#fff;
+}
+.site-footer{
+	margin-top:0;
+}
+/* Estilos Mayor a 482px */
+@media only screen and (min-width: 482px) {
+	/* Header Padding y Margin */
+	.site-header {
+		padding: 0;
+	}
+	
+	/* ampliar Ancho del content del tema */
+	[class*=inner-container] > :not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {
+		max-width: 1240px;
+		width: calc(100% - 8rem);
+	}
+}
